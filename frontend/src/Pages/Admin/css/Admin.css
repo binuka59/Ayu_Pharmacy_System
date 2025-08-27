@@ -1,0 +1,132 @@
+.dashboard {
+  display: flex;
+}
+
+.sidebar {
+  position: fixed;
+  top:100px;
+  left: -210px;
+  width: 250px;
+  height: 100vh;
+  background: #1df3e869; 
+  color: rgb(5, 1, 44);
+  transition: left 0.3s ease;
+  overflow-y: auto;
+  z-index: 1000;
+  padding-top: 1.5rem;
+}
+
+.sidebar.open {
+  left: 0;
+  width: 250px;
+}
+
+.sidebar.close {
+  left: 0;
+  width: 70px; 
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar ul li a {
+  font-size: 1.3rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 10px;
+  text-decoration: none;
+  color: #010830;
+  transition: background 0.3s;
+  
+}
+
+.sidebar ul li a:hover {
+  background: #334155;
+  color: aliceblue;
+  box-shadow: 0 2px 4px rgb(255, 255, 255);
+}
+
+.sidebar ul li .submenu {
+  padding-left: 30px;
+  background: #0f172a;
+}
+
+.sidebar ul li .submenu li a {
+  font-size: 14px;
+  padding: 10px 20px;
+  color: #d1d5db;
+}
+.sidebar .menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  width: 100%;  
+  
+}
+
+.sidebar .showic
+{
+
+  margin-left: 3rem;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  transition: left 0.3s ease; 
+}
+.toggle-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #140244;
+  position: absolute;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+
+.toggle-btn.close {
+  top: 6rem;
+  left:0rem;
+  display: block; 
+  transition: left 0.3s ease; 
+  
+}
+
+
+.toggle-btn.open {
+  top: 6rem;
+  left:13rem;
+  display: block; 
+  transition: left 0.3s ease;
+ 
+}
+
+
+.sidebar.open ~ .toggle-btn.close {
+  display: none;  
+}
+
+
+/* Main Content */
+.content {
+  margin-left: 250px;
+  padding: 20px;
+  flex: 1;
+  transition: margin-left 0.3s ease;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .content {
+    margin-left: 0;
+    padding: 70px 20px;
+  }
+}
