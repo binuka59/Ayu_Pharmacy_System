@@ -5,12 +5,13 @@
     height:100vh;
     
 }
-.banner
+.banners
 {
     font-size: 3rem;
     padding:3rem  8rem;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
+    
 }
 
 
@@ -65,7 +66,7 @@
    font-weight: bold;
 }
 
-.login-right .form .form-control
+.login-right .form-log .form-control
 {
   margin-left:5rem;
   width: 30rem;
@@ -196,7 +197,7 @@
     padding: 2rem 1rem;
   }
 
-  .banner {
+  .banners {
     font-size: 2rem;
     padding: 1rem;
     text-align: center;
@@ -230,7 +231,7 @@
     margin: 1rem 0;
   }
 
-  .login-right .form .form-control {
+  .login-right .form-log .form-control {
     margin: 1rem auto;
     width: 90%;
   }

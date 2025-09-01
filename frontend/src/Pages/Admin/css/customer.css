@@ -1,0 +1,103 @@
+.form-customer {
+  display: flex;
+  gap: 30%; 
+  padding-top:1rem;
+  
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column; 
+  
+}
+.customer-label
+{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(2, 2, 54);
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.customer-input
+{
+  width: 90%;
+  text-align: center;
+  font-size: 1.2rem;
+  border: 3px solid black;
+  border-radius: .5rem;
+  margin-bottom: 2rem;
+  margin-left:2.8rem;
+  box-shadow: 0px 2px 2px 4px rgba(0, 245, 212, 0.4);
+}
+
+.cuform-btn {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  margin-top: 3rem; 
+   
+}
+
+.cuform-btn .customerbtn
+{
+  width: 40%;
+    margin-left: 5rem;
+  padding: 4px 70px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #c5faee;
+  color: rgb(1, 1, 44);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 3px solid black;
+  box-shadow: 0px 3px 3px 4px rgba(0, 245, 212, 0.7);
+}
+
+.cuform-btn .customerbtn:hover {
+  background-color: #ffffff;
+  box-shadow: 0px 3px 3px 4px rgba(57, 58, 58, 0.7);
+  padding: 5px 72px;
+
+}
+
+.editbtn
+{
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: rgb(5, 122, 103);
+}
+
+.editbtn:hover
+{
+
+  font-size: 1.6rem;
+  color: rgb(1, 1, 58);
+  transition: 1s;
+  
+}
+
+.deletebtn
+{
+
+  font-size: 1.5rem;
+  color: red;
+  margin-left: 1rem;
+  
+}
+.deletebtn:hover {
+  color: rgb(218, 5, 5);
+ 
+  animation: shake 0.5s;
+  animation-iteration-count: 1;
+}
+
+
+@keyframes shake {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(-3px, 0); }
+  50% { transform: translate(3px, 0); }
+  75% { transform: translate(-3px, 0); }
+  100% { transform: translate(0, 0); }
+}

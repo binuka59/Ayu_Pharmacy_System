@@ -15,9 +15,11 @@ function Head() {
 <div class="sidebar-mini fixed"> 
       <div class="wrapper">
         <header class="main-header-top hidden-print">
-          <div class="banner">
-            <span><span1>A</span1>yu</span>
-            <div class="logo-row">
+          <div class="banner-head">
+            <div class="logo-row-f">
+                <span>A<span1>yu</span1></span>
+            </div>
+            <div class="logo-row-s">
               <img class="img-fluid logo" src="/logo1.png" alt="logo"/>
               <span>P<span1>harmacy</span1></span>
             </div>

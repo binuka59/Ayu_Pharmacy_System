@@ -76,7 +76,7 @@ import React, { useState, useEffect } from "react";
   return (
 
     <div className="main">
-      <div className="banner">Welcome Ayu Pharmacy</div>
+      <div className="banners">Welcome Ayu Pharmacy</div>
 
       <div className="logform">
         <div className="login-left">
@@ -90,7 +90,7 @@ import React, { useState, useEffect } from "react";
 
           <div className="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
             <form onSubmit={handleSubmit}>
-              <div className="form">
+              <div className="form-log">
                 <label className="form-label">Email address :</label>
                 <input
                   type="email"
@@ -102,7 +102,7 @@ import React, { useState, useEffect } from "react";
                 />
               </div>
 
-              <div className="form">
+              <div className="form-log">
                 <label className="form-label">Password:</label>
                 <div className="password-wrapper">
                   <input

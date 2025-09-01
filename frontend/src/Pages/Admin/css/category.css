@@ -1,0 +1,117 @@
+.form-category label
+{
+    font-size: 1.3rem;
+    color: rgb(3, 3, 66);
+    font-weight: bold;
+    width: 10rem;
+}
+
+.form-category input
+{
+  width: 20rem;
+  text-align: center;
+  font-size: 1.2rem;
+  border: 3px solid black;
+  border-radius: .5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0px 2px 2px 4px rgba(0, 245, 212, 0.4);
+}
+
+.form-btn input
+{
+  margin-left: 5rem;
+  padding: 4px 70px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #c5faee;
+  color: rgb(1, 1, 44);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 3px solid black;
+  box-shadow: 0px 3px 3px 4px rgba(0, 245, 212, 0.7);
+}
+
+.form-btn input:hover {
+  background-color: #ffffff;
+  box-shadow: 0px 3px 3px 4px rgba(57, 58, 58, 0.7);
+  padding: 5px 72px;
+
+}
+.main-content .rows
+{
+  margin-top: 3rem; 
+  border: 4px solid black;
+  border-radius: .5rem;
+   box-shadow: 2px 2px 2px 4px rgba(0, 245, 212, 0.6);
+  margin-left: 1rem;
+  text-align: center;
+}
+.form-btn .removecat
+{
+  
+  margin-left: 75%;
+  padding: 4px 70px;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+
+}
+
+.form-btn .removecat:hover
+{
+  background-color: #ffffff;
+  box-shadow: 0px 3px 3px 4px rgba(238, 27, 27, 0.7);
+ 
+}
+
+/* Mobile version for screens <= 768px */
+@media screen and (max-width: 768px) {
+
+  .form-category {
+    display: flex;
+    flex-direction: column; /* Stack label and input */
+    align-items: flex-start;
+    margin-bottom: 1rem;
+  }
+
+  .form-category label {
+    width: 100%; /* Full width for small screens */
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .form-category input {
+    width: 100%; /* Full width */
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+
+  .form-btn input {
+    width: 100%; /* Full width buttons */
+    margin-left: 0;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .form-btn input:hover {
+    padding: 11px;
+  }
+
+  .form-btn .removecat {
+    width: 100%; /* Full width remove button */
+    margin-left: 0;
+    margin-top: 1rem;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .main-content .rows {
+    margin-left: 0;
+    width: 100%;
+    box-shadow: 1px 1px 2px rgba(0, 245, 212, 0.5);
+    border-width: 3px;
+  }
+}
+
+

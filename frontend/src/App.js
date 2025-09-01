@@ -9,6 +9,10 @@ import Admin from './Pages/Admin/Homepage';
 import LoginPage from './Pages/Login/Login';
 import Staff from './Pages/Staff/staffhome';
 import PrivateRoute from './Pages/Admin/PrivateRoute';
+import Category from './Pages/Admin/Category';
+import Title from './Pages/Admin/title';
+import Customer from './Pages/Admin/Customer';
+import Staffhome from './Pages/Admin/Staff';
 
 function App() {
   return (
@@ -25,6 +29,10 @@ function App() {
           <Route path="/ResetPassword" element={<ResetPassword />} />
           <Route path="/Admin" element={<PrivateRoute role="admin"><Admin /></PrivateRoute>} />
           <Route path="/Staff" element={<PrivateRoute role="staff"><Staff /></PrivateRoute>} />
+          <Route path="/Category" element={<Category />} />
+          <Route path="/Title" element={<Title />} />
+          <Route path="/Customer" element={<Customer />} />
+          <Route path="/Staffhome" element={<Staffhome />} />
         </Routes>
       </Router>
     </>

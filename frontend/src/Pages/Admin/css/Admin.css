@@ -1,132 +1,330 @@
-.dashboard {
+.main-content {
+  transition: margin-left 0.3s ease;
+  padding: 20px;
+  margin-left: 40px;
+  overflow-y: auto; 
+  padding-top: 6rem;
+  /* background-image: url(" ../../../../public/images/background 5.png");
+    background-size: cover;     
+  background-position: center; 
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;  */
+
+
+}
+.main-content.shifted {
+  margin-left: 220px;
+}
+
+.main-content h1
+{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: rgb(2, 1, 51);
+}
+.page {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;  /* two equal columns */
+ 
+  
+}
+.page .right
+{
+   
+}
+
+
+.section {
+  padding: 10px;
+}
+
+.form-group
+{
+  font-size: 1.5rem;
+  font-weight: bold;
   display: flex;
 }
-
-.sidebar {
-  position: fixed;
-  top:100px;
-  left: -210px;
-  width: 250px;
-  height: 100vh;
-  background: #1df3e869; 
-  color: rgb(5, 1, 44);
-  transition: left 0.3s ease;
-  overflow-y: auto;
-  z-index: 1000;
-  padding-top: 1.5rem;
+.form-group .form-serach  label
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.form-group .form-serach input
+{
+  width:17rem;
+  text-align: center;
+  font-size: 1.2rem;
+  border: 3px solid black;
+  border-radius: .5rem;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0px 2px 2px 4px rgba(0, 245, 212, 0.4);
+}
+.details
+{
+  display: inline
 }
 
-.sidebar.open {
-  left: 0;
-  width: 250px;
+.details .form-label
+{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(2, 2, 54);
 }
 
-.sidebar.close {
-  left: 0;
-  width: 70px; 
+.details .form input
+{
+  font-size: 1.3rem;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: 16rem;
+  text-align: center;
+  color:rgb(16, 2, 94);
+  border: 3px solid black;
+  border-radius: .5rem;
+  margin-bottom: .5rem;
+  box-shadow: 0px 2px 2px 4px rgba(0, 245, 212, 0.4);
+}
+.form{
+  display: flex;
+  align-items: center;   /* vertical align input + label */
+  margin-bottom: 10px;
 }
 
-.sidebar ul {
-  list-style: none;
-  padding: 0;
+.form .form-label {
+  width: 150px;          /* fix label width */
+  font-weight: bold;
 }
 
-.sidebar ul li {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+.form-stock input
+{
+   font-size: 1.5rem;
+   color: rgb(133, 5, 5);
+   font-weight: bold;
+   border: none;
+   margin-left: 1rem;
+   width:9rem;
 }
 
-.sidebar ul li a {
+.right .rows
+{
+  margin-top: 3rem; 
+  border: 3px solid black;
+  border-radius: .5rem;
+   box-shadow: 2px 2px 2px 4px rgba(0, 245, 212, 0.6);
+   width:45rem;
+  margin-left: 1rem;
+}
+
+
+.right .card-block thead
+{
   font-size: 1.3rem;
   font-weight: bold;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 16px 10px;
-  text-decoration: none;
-  color: #010830;
-  transition: background 0.3s;
-  
-}
-
-.sidebar ul li a:hover {
-  background: #334155;
-  color: aliceblue;
-  box-shadow: 0 2px 4px rgb(255, 255, 255);
-}
-
-.sidebar ul li .submenu {
-  padding-left: 30px;
-  background: #0f172a;
-}
-
-.sidebar ul li .submenu li a {
-  font-size: 14px;
-  padding: 10px 20px;
-  color: #d1d5db;
-}
-.sidebar .menu-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; 
-  width: 100%;  
-  
-}
-
-.sidebar .showic
-{
-
-  margin-left: 3rem;
-  font-weight: bolder;
-  font-size: 1.5rem;
-  transition: left 0.3s ease; 
-}
-.toggle-btn {
-  background: none;
-  border: none;
-  font-size: 22px;
-  cursor: pointer;
-  color: #140244;
-  position: absolute;
-  font-weight: bold;
-  z-index: 1000;
-}
-
-
-.toggle-btn.close {
-  top: 6rem;
-  left:0rem;
-  display: block; 
-  transition: left 0.3s ease; 
-  
-}
-
-
-.toggle-btn.open {
-  top: 6rem;
-  left:13rem;
-  display: block; 
-  transition: left 0.3s ease;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
  
 }
 
-
-.sidebar.open ~ .toggle-btn.close {
-  display: none;  
+.right .card-block tbody
+{
+  text-align: center;
 }
 
 
-/* Main Content */
-.content {
-  margin-left: 250px;
-  padding: 20px;
-  flex: 1;
-  transition: margin-left 0.3s ease;
+.right .form-group
+{
+  margin-left: 18rem;
+  margin-top: 2rem;
 }
 
-/* Responsive */
+.right .form-label
+{
+  font-size: 1.3rem;
+  width: 190px;         
+  font-weight: bold;
+}
+
+.right .amount
+{
+  font-size: 1.3rem;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: 16rem;
+  text-align: center;
+  color:rgb(16, 2, 94);
+  border: 3px solid black;
+  border-radius: .5rem;
+  margin-bottom: .5rem; 
+  box-shadow: 0px 2px 2px 4px rgba(0, 245, 212, 0.4);
+}
+.button-group {
+  display: flex;             
+  justify-content: center;    
+  gap: 15rem;           
+  margin-top: 20px;
+}
+
+.button-group input[type="button"] {
+  padding: 10px 70px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  background-color: #c5faee;
+  color: rgb(1, 1, 44);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 3px solid black;
+  box-shadow: 0px 3px 3px 4px rgba(0, 245, 212, 0.7);
+}
+
+.button-group input[type="button"]:hover {
+  background-color: #ffffff;
+  box-shadow: 0px 3px 3px 4px rgba(57, 58, 58, 0.7);
+  padding: 11px 71px;
+
+}
+.main-content .copyright
+{
+  margin-top: 2rem;
+  text-align: center;
+  font-weight: bold;
+
+}
+
 @media screen and (max-width: 768px) {
-  .content {
+
+  .main-content {
     margin-left: 0;
-    padding: 70px 20px;
+    padding: 1rem;
+    padding-top: 5rem;
+  }
+
+  .main-content.shifted {
+    margin-left: 0; /* Avoid shifting on small screens */
+  }
+
+  .main-content h1 {
+    font-size: 1.2rem;
+  }
+
+  .page {
+    grid-template-columns: 1fr; 
+    gap: 1rem;
+  }
+
+  .section {
+    padding: 15px;
+  }
+
+  .form-group {
+    flex-direction: column; 
+    font-size: 1.2rem;
+    align-items: flex-start;
+    
+  }
+   .form-serach label
+  {
+    
+    margin-left:2rem;
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  .form-group .form-serach input
+  {
+    width:10rem; 
+    margin-left:2rem;
+    text-align: left;
+    font-size: 1rem;
+  }
+  .details .form input
+  {
+    width:10rem; 
+    margin-left:1rem;
+    text-align: left;
+    font-size: 1rem;
+  }
+  .right .amount
+  {
+    width:10rem; 
+    margin-left:-2rem;
+    text-align: left;
+    font-size: 1rem;
+  }
+    .right .amounts .form-label 
+  {
+    width:10rem; 
+    margin-left: -18rem;
+    text-align: left;
+    font-size: 1rem;
+  }
+   .form-stock label{
+ 
+    margin-left:2rem;
+    text-align: left;
+    font-size: 1rem;
+  }
+  .form-stock input {
+   border: none;
+    width:1rem; 
+    margin-left: 15rem;
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  .form .form-label
+  {
+    width:8rem; 
+    margin-bottom: 0.5rem;
+    margin-left: 2rem;
+  }
+  .right .form-label
+  {
+    width:8rem; 
+    margin-bottom: 0.5rem;
+    margin-left: 2rem;
+  }
+
+  .right .rows {
+    width: 20rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    box-shadow: 1px 1px 2px rgba(0, 245, 212, 0.4);
+    font-size:.8rem;
+  }
+
+
+  .button-group {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .button-group input[type="button"] {
+    padding: 10px 10px;
+    width: 15rem;
+    font-size: 1rem;
+    margin-left: 5rem;
+  }
+
+  .details .form-label,
+  .form-label {
+    font-size: 1rem;
+  }
+
+  .right .card-block thead {
+    font-size: .5rem;
+  }
+
+  .right .card-block tbody {
+    font-size: 0.9rem;
+  }
+
+  .form-stock input {
+    width:10rem;
   }
 }
+
+

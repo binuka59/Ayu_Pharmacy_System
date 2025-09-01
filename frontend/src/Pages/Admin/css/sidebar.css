@@ -1,0 +1,160 @@
+
+
+.dashboard {
+  display: flex;
+}
+
+.sidebar {
+  position: fixed;
+  top: 95px;
+  left: -200px;
+  width: 240px;
+  height: calc(100vh - 100px); /* subtract header height */
+  background: #1df3e869; 
+  color: rgb(5, 1, 44);
+  transition: left 0.3s ease;
+  overflow-y: auto;   /* enables vertical scroll */
+  z-index: 1000;
+  
+}
+
+
+.sidebar.open {
+  left: 0;
+  width: 16%;
+  
+}
+
+.sidebar.close {
+  left: 0;
+  width: 240px;
+  
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  
+
+}
+
+.sidebar ul li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  
+}
+
+.sidebar ul li a {
+  font-size: 1.3rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding: 16px 10px;
+  text-decoration: none;
+  color: #f80f0f;
+  transition: 1s;
+   
+  
+}
+.sidebar ul li .menu-item{
+  font-size: 1.3rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 10px;
+  text-decoration: none;
+  color: #010830;
+  transition: 1s;
+  
+}
+
+
+.sidebar ul li a:hover {
+  background: #334155;
+  color: aliceblue;
+  box-shadow: 0 2px 4px rgb(255, 255, 255);
+}
+
+.sidebar ul li .submenu {
+  padding-left:20px;
+  background: #0f172a;
+}
+
+.sidebar ul li .submenu li a {
+  font-size: 14px;
+  padding: 10px 6px;
+  color: #d1d5db;
+
+}
+.sidebar .menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  width: 100%;  
+
+  
+}
+
+.sidebar .showic
+{
+
+  margin-left: 3rem;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  transition: left 0.3s ease; 
+  margin-top: -1rem;
+}
+
+
+/* Main Content */
+.content {
+  margin-left: 250px;
+  padding: 20px;
+  flex: 1;
+  transition: margin-left 0.3s ease;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .content {
+    margin-left: 0;
+    padding: 70px 20px;
+  }
+
+  
+  .sidebar.open {
+    left: 0;
+    width: 120px;
+  }
+
+  .sidebar ul li a {
+  font-size: .6rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 6px;
+  text-decoration: none;
+  color: #010830;
+  transition: background 0.3s;
+  
+}
+
+
+
+.toggle-btn.open {
+  top: 6rem;
+  left:4rem;
+  display: block; 
+  transition: left 0.3s ease;
+}
+.sidebar .showic
+{
+
+  margin-left:3rem;
+  font-weight: bolder;
+  font-size: 1rem;
+  transition: left 0.3s ease; 
+}
+
+}
