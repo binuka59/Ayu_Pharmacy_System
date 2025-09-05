@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 import React from 'react';
+=======
+import React, { useState} from "react";
+import { Link } from 'react-router-dom';
+>>>>>>> 792cc480 (second commit)
 import './css/head.css';
 import { FaBell,FaCog, FaUser, FaSignOutAlt } from "react-icons/fa";
 
@@ -68,7 +73,11 @@ function Head() {
                   </a>
                   <ul class="dropdown-menu settings-menu">
                     <li><a href="#!"><i class="icon-profile"><FaCog/></i>  Settings</a></li>
+<<<<<<< HEAD
                     <li><a href="#"><i class="icon-profile"><FaUser/></i>  Profile</a></li>
+=======
+                    <li><Link to="/Profile"><i class="icon-profile"><FaUser/></i>  Profile</Link></li>
+>>>>>>> 792cc480 (second commit)
                     <li onClick={toggleFullScreen}><a href="#"><i class="icon-profile"><FaUser/></i>  Full Screen</a></li>
                     
                     

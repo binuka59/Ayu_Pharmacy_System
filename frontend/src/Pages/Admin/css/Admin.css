@@ -64,7 +64,11 @@
 }
 .details
 {
+<<<<<<< HEAD
   display: inline
+=======
+  display: inline;
+>>>>>>> 792cc480 (second commit)
 }
 
 .details .form-label
@@ -110,7 +114,11 @@
 .right .rows
 {
   margin-top: 3rem; 
+<<<<<<< HEAD
   border: 3px solid black;
+=======
+  border: 3px solid rgba(0, 0, 0, 0.966);
+>>>>>>> 792cc480 (second commit)
   border-radius: .5rem;
    box-shadow: 2px 2px 2px 4px rgba(0, 245, 212, 0.6);
    width:45rem;
@@ -192,6 +200,180 @@
   font-weight: bold;
 
 }
+<<<<<<< HEAD
+=======
+.printbill .modal-content
+{
+  box-shadow: none; 
+  width: 50%;
+  height:auto;
+  margin-left: 8rem;
+  
+}
+
+
+
+.printform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; /* spacing between input and button group */
+  margin-top: 1.5rem;
+  margin-left: 3rem;
+}
+
+.printform input[name="cash"] {
+  width: 200px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #333;
+  border-radius: 8px;
+  text-align: center;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.printform input[name="cash"]:focus {
+  border-color: #007bff; /* blue highlight on focus */
+}
+
+.btnprint {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btnprint button {
+  padding: 10px 60px;
+  font-size: 1rem;
+  border: white solid 2px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btnprint button:first-child {
+  background-color: #07e8f0; 
+  color: rgb(0, 0, 0);
+}
+
+.btnprint button:first-child:hover {
+  background-color: #21887a;
+  transform: scale(1.05);
+}
+
+.btnprint button:last-child {
+  background-color: #dc3545; /* red for Close */
+  color: rgb(0, 0, 0);
+}
+
+.btnprint button:last-child:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+/* Normal view */
+.printbill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.printbill {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Bill box */
+.modal-content {
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 10px;
+  width: 320px;
+  font-family: "Courier New", monospace;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* Bill header */
+.modal-content h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.modal-content p {
+  margin: 2px 0;
+  font-size: 14px;
+}
+
+/* Table style */
+.modal-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+  font-size: 13px;
+}
+
+.modal-content th,
+.modal-content td {
+  border-bottom: 1px dashed #333;
+  padding: 4px;
+  text-align: center;
+}
+
+.modal-content th {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+/* Last totals */
+.lastbill {
+  margin-top: 10px;
+  text-align: right;
+  font-size: 14px;
+}
+
+.lastbill p {
+  margin: 3px 0;
+
+}
+
+.lastbill span {
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+/* Print friendly */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .modal-content, .modal-content * {
+    visibility: visible;
+  }
+  .modal-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+  }
+}
+
+
+
+>>>>>>> 792cc480 (second commit)
 
 @media screen and (max-width: 768px) {
 

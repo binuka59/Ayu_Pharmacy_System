@@ -19,7 +19,12 @@
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
     "mysql": "^2.18.1",
+<<<<<<< HEAD
     "mysql2": "^3.14.3"
+=======
+    "mysql2": "^3.14.3",
+    "node-fetch": "^3.3.2"
+>>>>>>> 792cc480 (second commit)
   },
   "description": "",
   "devDependencies": {

@@ -24,7 +24,11 @@ import React, { useState, useEffect } from "react";
         const handleSubmit = async (e) => {
             e.preventDefault();
            try {
+<<<<<<< HEAD
               const response = await axios.post('http://localhost:5000/login', {
+=======
+              const response = await axios.post('http://localhost:5000/api/log/login', {
+>>>>>>> 792cc480 (second commit)
                 email,
                 password,
               });

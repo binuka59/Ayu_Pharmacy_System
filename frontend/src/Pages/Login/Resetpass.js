@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+<<<<<<< HEAD
+=======
+import  './css/login.css';
+>>>>>>> 792cc480 (second commit)
 
 
 export default function Resetpass() {
@@ -14,7 +18,11 @@ export default function Resetpass() {
 const handleEmail = async (e) => {
   e.preventDefault();
   try {
+<<<<<<< HEAD
     const response = await axios.post('http://localhost:5000/Reset', {
+=======
+    const response = await axios.post('http://localhost:5000/api/log/Reset', {
+>>>>>>> 792cc480 (second commit)
       email: email  
     });
 
@@ -34,7 +42,11 @@ const handleEmail = async (e) => {
 
   return (
     <div className="main">
+<<<<<<< HEAD
       <div className="banner">Welcome Ayu Pharmacy</div>
+=======
+      <div className="banners">Welcome Ayu Pharmacy</div>
+>>>>>>> 792cc480 (second commit)
 
       <div className="logform">
         <div className="login-left">
@@ -46,7 +58,11 @@ const handleEmail = async (e) => {
           <h3>F o r g e t___E m a i l</h3>
           <div className="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
             <form onSubmit={handleEmail} method="post">
+<<<<<<< HEAD
               <div className="form">
+=======
+              <div className="form-log">
+>>>>>>> 792cc480 (second commit)
                 <label className="form-label">Email address :</label>
                 <input
                   type="email"

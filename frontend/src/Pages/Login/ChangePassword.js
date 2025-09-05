@@ -17,7 +17,11 @@ export default function ChangePassword() {
  const handlePassword = async (e) => {
     e.preventDefault(); 
     try {
+<<<<<<< HEAD
       const response = await axios.post('http://localhost:5000/Passwordset', {
+=======
+      const response = await axios.post('http://localhost:5000/api/log/Passwordset', {
+>>>>>>> 792cc480 (second commit)
         newpass,
         compass,
       });
@@ -43,7 +47,11 @@ export default function ChangePassword() {
 
   return (
     <div className="main">
+<<<<<<< HEAD
       <div className="banner">Welcome Ayu Pharmacy</div>
+=======
+      <div className="banners">Welcome Ayu Pharmacy</div>
+>>>>>>> 792cc480 (second commit)
 
       <div className="logform">
         <div className="login-left">
@@ -56,7 +64,11 @@ export default function ChangePassword() {
           <h3>Change New Password</h3>
           <div className="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
           <form onSubmit={handlePassword} method='post'>
+<<<<<<< HEAD
               <div className="form">
+=======
+              <div className="form-log">
+>>>>>>> 792cc480 (second commit)
                 <label className="form-label">New Password:</label>
                 <div className="password-wrapper">
                   <input
@@ -74,7 +86,11 @@ export default function ChangePassword() {
                 </div>
               </div>
 
+<<<<<<< HEAD
               <div className="form">
+=======
+              <div className="form-log">
+>>>>>>> 792cc480 (second commit)
                 <label className="form-label">Comfirm Password:</label>
                 <div className="password-wrapper">
                   <input
