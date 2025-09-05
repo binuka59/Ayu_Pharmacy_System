@@ -64,11 +64,7 @@
 }
 .details
 {
-<<<<<<< HEAD
-  display: inline
-=======
   display: inline;
->>>>>>> 792cc480 (second commit)
 }
 
 .details .form-label
@@ -114,11 +110,7 @@
 .right .rows
 {
   margin-top: 3rem; 
-<<<<<<< HEAD
-  border: 3px solid black;
-=======
   border: 3px solid rgba(0, 0, 0, 0.966);
->>>>>>> 792cc480 (second commit)
   border-radius: .5rem;
    box-shadow: 2px 2px 2px 4px rgba(0, 245, 212, 0.6);
    width:45rem;
@@ -200,8 +192,6 @@
   font-weight: bold;
 
 }
-<<<<<<< HEAD
-=======
 .printbill .modal-content
 {
   box-shadow: none; 
@@ -373,7 +363,6 @@
 
 
 
->>>>>>> 792cc480 (second commit)
 
 @media screen and (max-width: 768px) {
 

@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-=======
 import { MemoryRouter } from 'react-router-dom';
->>>>>>> 792cc480 (second commit)
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
 test('renders learn react link', () => {
-<<<<<<< HEAD
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
-=======
   render(
     <MemoryRouter>
       <App />
@@ -39,4 +30,3 @@ describe("Ayu Pharmacy API Tests", () => {
     expect(res.statusCode).toBe(401);
   });
 });
->>>>>>> 792cc480 (second commit)

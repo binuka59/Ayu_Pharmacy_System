@@ -93,8 +93,6 @@
   animation-iteration-count: 1;
 }
 
-<<<<<<< HEAD
-=======
 .Viewbtn
 {
   font-size: 1.5rem;
@@ -108,7 +106,6 @@
   color: rgb(75, 14, 245);
 }
 
->>>>>>> 792cc480 (second commit)
 
 @keyframes shake {
   0% { transform: translate(0, 0); }
@@ -117,8 +114,6 @@
   75% { transform: translate(-3px, 0); }
   100% { transform: translate(0, 0); }
 }
-<<<<<<< HEAD
-=======
 
 .form-item {
   display: flex;
@@ -234,4 +229,3 @@
     border: 2px solid rgb(77, 2, 2);
     box-shadow: 0px 2px 2px 2px rgb(82, 80, 80);
 }
->>>>>>> 792cc480 (second commit)

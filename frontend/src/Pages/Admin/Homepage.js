@@ -5,14 +5,9 @@ import { useNavigate } from "react-router-dom";
 import Head from './Head'
 import Sidebar from './Sidebar'
 import Title from './title'
-<<<<<<< HEAD
-import React, { useState} from "react";
-import './css/Admin.css';
-=======
 import React, { useState, useEffect } from "react";
 import './css/Admin.css';
 import axios from "axios";
->>>>>>> 792cc480 (second commit)
 
 import {  FaSearch  } from "react-icons/fa";
 
@@ -26,15 +21,6 @@ function Homepage() {
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
-<<<<<<< HEAD
-  const [selectedRows, setSelectedRows] = useState([]);
-
-  const rows = [
-    { name: "Mark", size: "Otto", quantity: 5, price: 100, amount: 500 },
-    { name: "Jacob", size: "Thornton", quantity: 2, price: 150, amount: 300 },
-    { name: "Larry", size: "Bird", quantity: 1, price: 200, amount: 200 },
-  ];
-=======
   const [searchCode, setSearchCode] = useState("");
   const [quntity, setQuntity] = useState("");
   const [selectedRows, setSelectedRows] = useState([]);
@@ -50,7 +36,6 @@ function Homepage() {
 const balance = cash - totalAmount;
 
 
->>>>>>> 792cc480 (second commit)
 
   const handleCheckboxChange = (index) => {
     if (selectedRows.includes(index)) {
@@ -59,8 +44,6 @@ const balance = cash - totalAmount;
       setSelectedRows([...selectedRows, index]);
     }
   };
-<<<<<<< HEAD
-=======
     const [search, setSearch] = useState("");
     const [Items, setItems] = useState([]);
           // const mobileInput = document.querySelector("input[name='mobile']");
@@ -226,7 +209,6 @@ const balance = cash - totalAmount;
     return () => clearTimeout(timer); 
   }, [successMessage, error]);
 
->>>>>>> 792cc480 (second commit)
 
   return (
     <div>
@@ -239,30 +221,15 @@ const balance = cash - totalAmount;
           <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
 
           <h1>D a s h b o a r d</h1>
-<<<<<<< HEAD
-=======
           <div class="messageshow">
             {successMessage && <p style={{ color: "green"}}>{successMessage}</p>}
             {error && <p style={{ color: "red" }}>{error}</p>}
           </div>
->>>>>>> 792cc480 (second commit)
           <div className="page">
             <div className="section left">
               <form class="form-group">
                 <div className="form-serach">
                   <label>< FaSearch />Search</label>
-<<<<<<< HEAD
-                  <input type='text' name="search" placeholder='Search Item 🔍'/>
-                </div>
-              </form>
-              <div className="details">
-                <div class="form-group">
-                  <div className="form">
-                    <label className="form-label">Brand Name:</label>
-                    <input type='text'  name="brand" value="hemas"readOnly/>
-                  </div>
-                </div>
-=======
                   <input type='text' value={search} name="search" placeholder='Search Item 🔍' onChange={(e) => setSearch(e.target.value)}/>
                 </div>
               </form>
@@ -276,60 +243,39 @@ const balance = cash - totalAmount;
                   </div>
                 </div>
               
->>>>>>> 792cc480 (second commit)
 
                 <div class="form-group">
                   <div className="form">
                     <label className="form-label">Item Name:</label>
-<<<<<<< HEAD
-                    <input type='text'  name="iname" readOnly/>
-=======
                     <input type='text'  name="iname" value={Item.name} readOnly/>
->>>>>>> 792cc480 (second commit)
                   </div>
                 </div>
 
                 <div class="form-group">
                   <div className="form">
                     <label className="form-label">Item Type:</label>
-<<<<<<< HEAD
-                    <input type='text'  name="type" readOnly/>
-=======
                     <input type='text'  name="type" value={Item.category_name} readOnly/>
->>>>>>> 792cc480 (second commit)
                   </div>
                 </div>
 
                 <div class="form-group">
                   <div className="form">
                     <label className="form-label">Item  Size:</label>
-<<<<<<< HEAD
-                    <input type='text'  name="size" readOnly/>
-=======
                     <input type='text'  name="size"value={Item.packsize} readOnly/>
->>>>>>> 792cc480 (second commit)
                   </div>
                 </div>
 
                 <div class="form-group">
                   <div className="form">
                     <label className="form-label">Item  Price:</label>
-<<<<<<< HEAD
-                    <input type='text'  name="price" readOnly/>
-=======
                     <input type='text'  name="price" value={Item.price}  readOnly/>
->>>>>>> 792cc480 (second commit)
                   </div>
                 </div>
 
                 <div class="form-group">
                   <div className="form-stock">
                     <label className="form-label">Available Items of Stock:</label>
-<<<<<<< HEAD
-                    <input type='text'  name="stock" value="100" readOnly/>
-=======
                     <input type='text'  name="stock" value={Item.quantity} readOnly/>
->>>>>>> 792cc480 (second commit)
                   </div>
                 </div>
 
@@ -350,9 +296,6 @@ const balance = cash - totalAmount;
                   </div>
                 </div>
 
-<<<<<<< HEAD
-              </div>
-=======
 
             
               </div>
@@ -422,7 +365,6 @@ const balance = cash - totalAmount;
 
               </div>
             )}
->>>>>>> 792cc480 (second commit)
             </div>
 
             <div className="section right">
@@ -440,16 +382,10 @@ const balance = cash - totalAmount;
                       </tr>
                     </thead>
                     <tbody>
-<<<<<<< HEAD
-                      {rows.map((row, index) => (
-                        <tr
-                          key={row.code}
-=======
                       
                       {cartitems.map((cart, index) => (
                         <tr
                           key={cart.id || index}  
->>>>>>> 792cc480 (second commit)
                           className={selectedRows.includes(index) ? "table-primary" : ""}
                         >
                           <td>
@@ -461,19 +397,11 @@ const balance = cash - totalAmount;
                           </td>
 
                           
-<<<<<<< HEAD
-                          <td>{row.name}</td>
-                          <td>{row.size}</td>
-                          <td>{row.quantity}</td>
-                          <td>{row.price}</td>
-                          <td>{row.amount}</td>
-=======
                           <td>{cart.name}</td>
                           <td>{cart.size}</td>
                           <td>{cart.quantity}</td>
                           <td>{cart.price.toFixed(2)}</td>
                           <td>{cart.amount.toFixed(2)}</td>
->>>>>>> 792cc480 (second commit)
                         </tr>
                       ))}
                     </tbody>
@@ -484,9 +412,6 @@ const balance = cash - totalAmount;
               <div class="form-group">
                 <div className="form amounts">
                   <label className="form-label ">Total Amount:</label>
-<<<<<<< HEAD
-                  <input type='text' class="amount"  name="totamount" value="totamount"readOnly/>
-=======
                   <input type='text' class="amount"  name="totamount" value={totalAmount.toFixed(2)} readOnly/>
                 </div>
               </div>
@@ -501,7 +426,6 @@ const balance = cash - totalAmount;
                         }
                       }}
                     />
->>>>>>> 792cc480 (second commit)
                 </div>
               </div>
 
@@ -510,12 +434,6 @@ const balance = cash - totalAmount;
 
           </div>
             <form class="button-group">
-<<<<<<< HEAD
-              <input type="button" name="submitbtn" value="Add Cart" />
-              <input type="button" name="submitbtn" value="Delete Item" />
-              <input type="button" name="submitbtn" value="Confirm" />
-            </form>
-=======
               <input type="button" name="submitbtn" value="Add Cart" onClick={handleAddCart} />
               <input type="button" name="submitbtn" value="Delete Item" onClick={handleDeleteCart}  />
               <input type="button" name="submitbtn" value="Confirm" onClick={handlebillprint} />
@@ -601,7 +519,6 @@ const balance = cash - totalAmount;
        
       </div>
     )}
->>>>>>> 792cc480 (second commit)
             <Title/>
         </div>
       </div>

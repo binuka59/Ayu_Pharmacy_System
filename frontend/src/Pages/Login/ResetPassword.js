@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
-<<<<<<< HEAD
-import '../Login/css/login.css'; 
-=======
 import  './css/login.css';
->>>>>>> 792cc480 (second commit)
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
@@ -25,11 +21,7 @@ export default function ResetPassword() {
   const handlecode = async (e) => {
     e.preventDefault();
     try {
-<<<<<<< HEAD
-      const response = await axios.post('http://localhost:5000/Verify', {
-=======
       const response = await axios.post('http://localhost:5000/api/log/Verify', {
->>>>>>> 792cc480 (second commit)
       OTPCode:OTPCode
       });
   
@@ -48,11 +40,7 @@ export default function ResetPassword() {
 
   return (
     <div className="main">
-<<<<<<< HEAD
-      <div className="banner">Welcome Ayu Pharmacy</div>
-=======
       <div className="banners">Welcome Ayu Pharmacy</div>
->>>>>>> 792cc480 (second commit)
 
       <div className="logform">
         <div className="login-left">
