@@ -1,0 +1,44 @@
+.help{
+  display: flex; 
+
+}
+
+.help .left-section {
+  flex: 1;
+  padding: 30px;
+  box-sizing: border-box;
+  background-image: url(../../../../public/images/y.png);
+  background-size: cover;      
+  background-position: center;  
+  background-repeat: no-repeat; 
+  height:70vh;
+}
+
+.help .right-section
+{
+    flex: 1;
+}
+.help .right-section .box-help
+{
+    margin-top: 6rem;
+    background:rgb(12, 1, 39);
+    border-radius: .5rem;
+  
+    border: white 3px solid;
+    box-shadow: 0px 2px 2px 4px rgb(8, 1, 51);
+    
+}
+.right-section .box-help h1
+{
+    
+    padding-top:1rem;
+    color: aliceblue;
+    
+}
+
+.right-section .box-help p
+{
+    font-size: 1.2rem;
+    color: aliceblue;
+    text-align: center;   
+}
