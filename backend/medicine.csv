@@ -1,0 +1,60 @@
+name,keywords,type_en,type_si,uses_en,uses_si,dosage_en,dosage_si,warning_en,warning_si
+paracetamol,"paracetamol|panadol|persitamol|perasitamole|පැනඩෝල්|penadol","Painkiller","වේදනා නාශක","Fever|Pain|Headache","උණ|වේදනාව|හිසරදය","500-1000mg every 4-6 hours","පැය 4-6කට වරක් 500-1000mg","Do not exceed 4000mg","4000mg ඉක්මවන්න එපා"
+ibuprofen,"ibuprofen|brufen|ඉබුප්‍රොෆෙන්","Anti-inflammatory","ආසාදන නාශක","Pain|Inflammation","වේදනාව|ආසාදනය","200-400mg every 6-8 hours","පැය 6-8කට 200-400mg","Take after food","ආහාරයට පසු ගන්න"
+amoxicillin,"amoxicillin|amoxil","Antibiotic","ප්‍රතිජීවක","Bacterial infections","බැක්ටීරියා ආසාදන","Doctor prescribed","වෛද්‍ය උපදෙස් අනුව","Complete full course","සම්පූර්ණ course එක ගන්න"
+cetirizine,"cetirizine|zincet","Antihistamine","ඇලර්ජි නාශක","Allergy|Sneezing","ඇලර්ජි|කිහිලි යාම","10mg daily","දිනකට 10mg","May cause drowsiness","නින්දාව ඇතිවිය හැක"
+metformin,"metformin","Antidiabetic","සීනි රෝග බෙහෙත්","Control blood sugar","සීනි පාලනය","500mg twice daily","දිනකට වාර 2ක් 500mg","Take with food","ආහාර සමඟ ගන්න"
+omeprazole,"omeprazole","Acid reducer","අම්ල නාශක","Acid reflux","අම්ල ගැටළු","20mg before meal","ආහාරයට පෙර 20mg","Do not overuse","අධික ලෙස භාවිතා නොකරන්න"
+aspirin,"aspirin","Painkiller","වේදනා නාශක","Pain|Blood thinning","වේදනාව|රුධිර පටලවීම","75-300mg daily","75-300mg","Avoid ulcers","ගැස්ට්‍රිටිස් වලට අවධානය"
+diclofenac,"diclofenac","NSAID","වේදනා නාශක","Pain|Inflammation","වේදනාව|ආසාදනය","50mg twice daily","50mg වාර 2ක්","Take after food","ආහාරයට පසු ගන්න"
+losartan,"losartan","Antihypertensive","පීඩන බෙහෙත්","High blood pressure","උස පීඩනය","50mg daily","50mg දිනකට","Monitor BP","පීඩනය පරීක්ෂා කරන්න"
+atorvastatin,"atorvastatin","Cholesterol","කොලෙස්ටරෝල් බෙහෙත්","Lower cholesterol","කොලෙස්ටරෝල් අඩු කිරීම","10-20mg daily","10-20mg","Avoid alcohol","මත්පැන් වලින් වළකින්න"
+salbutamol,"salbutamol","Bronchodilator","ශ්වාස බෙහෙත්","Asthma relief","ඇස්මා","As inhaler","inhaler ලෙස","Do not overuse","අධික ලෙස භාවිතා නොකරන්න"
+ranitidine,"ranitidine","Acid reducer","අම්ල නාශක","Acidity","අම්ල ගැටළු","150mg twice","150mg වාර 2ක්","Consult doctor","වෛද්‍ය උපදෙස් ගන්න"
+furosemide,"furosemide","Diuretic","ජල නාශක","Remove excess fluid","ජලය ඉවත් කිරීම","40mg daily","40mg","Monitor electrolytes","ලවණ පරීක්ෂා කරන්න"
+insulin,"insulin","Hormone","හෝමෝන","Control diabetes","සීනි පාලනය","As prescribed","වෛද්‍ය උපදෙස්","Monitor sugar","සීනි පරීක්ෂා කරන්න"
+clopidogrel,"clopidogrel","Blood thinner","රුධිර පටල නාශක","Prevent clots","රුධිර ගැටිල්ල වළක්වයි","75mg daily","75mg","Bleeding risk","ලේ ගැලීම අවදානම"
+warfarin,"warfarin","Anticoagulant","රුධිර නාශක","Prevent clots","රුධිර ගැටිල්ල","Doctor dose","වෛද්‍ය dose","Monitor INR","INR පරීක්ෂා කරන්න"
+azithromycin,"azithromycin","Antibiotic","ප්‍රතිජීවක","Infections","ආසාදන","500mg daily","500mg","Finish course","course සම්පූර්ණ කරන්න"
+doxycycline,"doxycycline","Antibiotic","ප්‍රතිජීවක","Bacterial infections","බැක්ටීරියා","100mg daily","100mg","Avoid sun","හිරු එළියෙන් වළකින්න"
+loperamide,"loperamide","Antidiarrheal","දිව බෙහෙත්","Diarrhea","දියවැඩිය","2mg after loose stool","2mg","Short term only","කෙටි කාලය"
+ORS,"ors|oral rehydration","Rehydration","ජල සම්පූර්ණය","Dehydration","ජල හිඟය","Mix with water","ජල සමඟ මිශ්‍ර කරන්න","Use clean water","පිරිසිදු ජලය භාවිතා කරන්න"
+
+
+paracetamol,"paracetamol|panadol|acetaminophen","Painkiller","වේදනා නාශක","Fever|Pain|Headache","උණ|වේදනාව|හිසරදය","500-1000mg every 4-6 hours","පැය 4-6කට වරක් 500-1000mg","Do not exceed 4000mg","4000mg ඉක්මවන්න එපා"
+ibuprofen,"ibuprofen|brufen","NSAID","වේදනා නාශක","Pain|Inflammation","වේදනාව|ආසාදනය","200-400mg every 6-8 hours","පැය 6-8කට 200-400mg","Take after food","ආහාරයට පසු ගන්න"
+amoxicillin,"amoxicillin|amoxil","Antibiotic","ප්‍රතිජීවක","Bacterial infections","බැක්ටීරියා ආසාදන","500mg every 8 hours","500mg පැය 8කට","Complete course","course සම්පූර්ණ කරන්න"
+cetirizine,"cetirizine|zincet","Antihistamine","ඇලර්ජි නාශක","Allergy|Sneezing","ඇලර්ජි|කිහිලි යාම","10mg daily","දිනකට 10mg","May cause drowsiness","නින්දාව ඇතිවිය හැක"
+metformin,"metformin","Antidiabetic","සීනි රෝග බෙහෙත්","Control blood sugar","සීනි පාලනය","500mg twice daily","දිනකට වාර 2ක් 500mg","Take with food","ආහාර සමඟ ගන්න"
+omeprazole,"omeprazole","PPI","අම්ල නාශක","Acid reflux","අම්ල ගැටළු","20mg before meal","ආහාරයට පෙර 20mg","Avoid long-term use","දිගු කාලීන භාවිතයෙන් වළකින්න"
+aspirin,"aspirin","Painkiller","වේදනා නාශක","Pain|Blood thinning","වේදනාව|රුධිර පටලවීම","75-300mg daily","75-300mg","Avoid ulcers","ගැස්ට්‍රිටිස් වලට අවධානය"
+diclofenac,"diclofenac","NSAID","වේදනා නාශක","Pain|Inflammation","වේදනාව|ආසාදනය","50mg twice daily","50mg වාර 2ක්","Take after food","ආහාරයට පසු ගන්න"
+losartan,"losartan","Antihypertensive","පීඩන බෙහෙත්","High BP","උස පීඩනය","50mg daily","50mg","Monitor BP","පීඩනය පරීක්ෂා කරන්න"
+atorvastatin,"atorvastatin","Statin","කොලෙස්ටරෝල්","Lower cholesterol","කොලෙස්ටරෝල් අඩු කිරීම","10-20mg daily","10-20mg","Avoid alcohol","මත්පැන් වලින් වළකින්න"
+
+# --- Added bulk medicines ---
+amitriptyline,"amitriptyline","Antidepressant","මානසික බෙහෙත්","Depression|Nerve pain","අවසාදය|නාඩී වේදනාව","25mg daily","25mg","May cause drowsiness","නිදා යාම"
+gabapentin,"gabapentin","Anticonvulsant","නාඩී බෙහෙත්","Nerve pain","නාඩී වේදනාව","300mg daily","300mg","Avoid alcohol","මත්පැන් වලින් වළකින්න"
+pregabalin,"pregabalin","Neuropathic","නාඩී බෙහෙත්","Nerve pain","නාඩී වේදනාව","75mg daily","75mg","Dizziness","හිසරදය"
+tramadol,"tramadol","Painkiller","වේදනා නාශක","Moderate pain","මධ්‍යම වේදනාව","50mg every 6h","50mg","Addiction risk","ආසක්ති අවදානම"
+codeine,"codeine","Opioid","වේදනා නාශක","Pain|Cough","වේදනාව|කැස්ස","15-60mg","15-60mg","Dependence risk","ආසක්ති අවදානම"
+naproxen,"naproxen","NSAID","වේදනා නාශක","Pain|Inflammation","වේදනාව","250mg twice","250mg","Take with food","ආහාර සමඟ"
+meloxicam,"meloxicam","NSAID","වේදනා නාශක","Arthritis","සන්ධි වේදනාව","7.5mg daily","7.5mg","GI issues","අමාශ ගැටළු"
+prednisolone,"prednisolone","Steroid","ස්ටෙරොයිඩ්","Inflammation","ආසාදන","5-60mg","5-60mg","Long-term risk","දිගු කාලීන අවදානම"
+hydrocortisone,"hydrocortisone","Steroid","ස්ටෙරොයිඩ්","Allergy|Inflammation","ඇලර්ජි","Apply thin layer","ලේයරයක්","Avoid overuse","අධික භාවිතයෙන් වළකින්න"
+salbutamol,"salbutamol","Bronchodilator","ශ්වාස බෙහෙත්","Asthma","ඇස්මා","Inhaler","inhaler","Do not overuse","අධික ලෙස භාවිතා නොකරන්න"
+
+# --- continuing ---
+azithromycin,"azithromycin","Antibiotic","ප්‍රතිජීවක","Infections","ආසාදන","500mg daily","500mg","Finish course","course සම්පූර්ණ කරන්න"
+clarithromycin,"clarithromycin","Antibiotic","ප්‍රතිජීවක","Resp infections","ශ්වසන ආසාදන","250-500mg","250-500mg","Avoid interactions","drug interactions"
+ciprofloxacin,"ciprofloxacin","Antibiotic","ප්‍රතිජීවක","UTI|Infections","UTI","500mg","500mg","Avoid dairy","දියර වලින් වළකින්න"
+levofloxacin,"levofloxacin","Antibiotic","ප්‍රතිජීවක","Resp infections","ශ්වසන","500mg","500mg","Tendon risk","නාඩී අවදානම"
+doxycycline,"doxycycline","Antibiotic","ප්‍රතිජීවක","Acne|Infections","ඇක්නී","100mg","100mg","Avoid sun","හිරු එළියෙන් වළකින්න"
+
+# --- more generic expansions ---
+vitaminC,"vitamin c|ascorbic acid","Vitamin","විටමින්","Immunity","ප්‍රතිශක්තිය","500mg daily","500mg","High dose risk","අධික dose අවදානම"
+vitaminD,"vitamin d","Vitamin","විටමින්","Bone health","අස්ථි සෞඛ්‍ය","1000IU","1000IU","Monitor levels","level පරීක්ෂා කරන්න"
+calcium,"calcium","Supplement","පෝෂණය","Bone strength","අස්ථි ශක්තිය","500mg","500mg","Kidney stones","කුඩු අවදානම"
+iron,"iron supplement","Supplement","ලෝහ","Anemia","රක්තහීනතාව","325mg","325mg","Constipation","මලබද්ධය"
+
+# --- you can scale like this ---

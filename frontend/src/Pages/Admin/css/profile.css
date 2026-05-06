@@ -1,0 +1,362 @@
+.form-customer .profile
+{
+   width:100%;
+   border:5px solid black;
+   border-radius: 6rem;
+   justify-items: center;
+   box-shadow: 0px 2px 2px 4px rgb(82, 229, 240);
+}
+
+.profile-up {
+
+  padding: 30px;
+  border: solid 3px black;
+  border-radius: 12px;
+  text-align: center;
+  width: 50rem;
+  box-shadow: 0px 2px 2px 4px rgb(82, 229, 240);
+  backdrop-filter: blur(10px);
+  background: white;
+}
+.profile-up .img-circle
+{
+  width:20rem;
+  height:18rem;
+}
+
+.profile-up .form-password {
+  width: 50%;
+  display: block;
+  margin: 0 auto;   
+  text-align: center;
+  box-shadow: 0px 2px 2px 4px rgba(0, 245, 212, 0.4);
+  margin-bottom: 2rem;
+  border-radius: .5rem;
+  border: 3px solid black;
+  padding: 5px;
+}
+
+.profile-up .prook {
+  width: 50%;
+  margin-top: 15px;
+  padding: 6px 16px;
+  border: none;
+  margin: 3px 10px;
+  background: #3fe4f08a;
+  color: rgb(1, 17, 41);
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0px 2px 2px 4px rgba(0, 245, 212, 0.89);
+  font-weight: bold;
+  transform: translateY(-8px) scale(1.02);
+}
+.profile-up .prook:hover {
+  background: #03d6e6e0;
+  color: rgb(0, 0, 0);
+
+  box-shadow: 0px 2px 2px 4px rgb(0, 247, 255);
+
+}
+.popup-overlay .clos-btn
+{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 22px;
+  color: rgb(223, 6, 6);
+
+}
+.popup-overlay .clos-btn:hover
+{
+  font-size: 24px;
+}
+
+.profile-up .form-data
+{
+  
+  display: flex;
+  margin-left: 5rem;
+  margin-bottom: 2rem;
+  font-size:1.2rem;
+
+}
+.profile-up span1
+{
+  
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  font-weight: bold;
+  color: black;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5rem;
+  width: 11rem;
+}
+
+.profile-up input
+{
+  border: none;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  font-weight: bold;
+  color: rgb(51, 50, 50);
+  font-size: 1.3rem;
+   
+}
+
+.settings-menu li 
+{
+  background: rgba(58, 57, 57, 0.342);
+  font-weight: bold;
+  margin-top: 1rem;
+  
+}
+
+.settings-menu li:hover
+{
+
+  box-shadow: 0px 2px 2px 4px rgba(3, 240, 240, 0.4);
+  
+  
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.616); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 2px 4px rgb(82, 229, 240);
+  z-index: 9999;
+}
+
+
+
+.popup-box {
+  background: white;
+  padding: 30px;
+  border: solid 3px black;
+  border-radius: 12px;
+  text-align: center;
+  width: 50rem;
+  box-shadow: 0px 2px 2px 4px rgb(82, 229, 240);
+  backdrop-filter: blur(5px);
+
+  max-height: 90vh;     
+  overflow-y: auto; 
+}
+.popup-box h2 {
+  margin-top: 0;
+  color: #333;
+  font-weight: bold;
+}
+.popup-box h4 {
+  margin-top:1rem;
+  margin-bottom: 1rem;
+}
+.popup-box label
+{
+  width:17rem;
+
+  font-size: 1.5rem;
+  margin-left:-3rem;
+  margin-bottom: 2rem;
+
+}
+
+.popup-box .form-control
+{
+  width:18rem;
+  text-align: center;
+  font-size: 1.2rem;
+  border: 3px solid black;
+  border-radius: .5rem;
+  margin-left:7rem;
+  margin-bottom: 2rem;
+  box-shadow: 0px 2px 2px 4px rgba(0, 245, 212, 0.4);
+}
+
+
+
+.popup-box .prook {
+  width: 30%;
+  margin-top: 15px;
+  padding: 8px 16px;
+  border: none;
+  margin: 5px 10px;
+  background: #525050;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0px 2px 2px 4px rgba(0, 245, 212, 0.4);
+  font-weight: bold;
+}
+
+.popup-box .proclose {
+  width: 30%;
+  margin-top: 15px;
+  padding: 8px 16px;
+  border: none;
+  margin: 5px 10px;
+  background: #ec1809;
+  color: rgb(255, 255, 255);
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0px 2px 2px 4px rgba(116, 117, 117, 0.4);
+  margin-bottom: 2rem;
+}
+
+
+.popup-overlay .downbtn {
+  width: 30%;
+  margin-top: 15px;
+  padding: 8px 16px;
+  border: none;
+  margin: 5px 10px;
+  background: #09ece1;
+  color: rgb(0, 0, 0);
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0px 2px 2px 4px rgba(116, 117, 117, 0.4);
+  font-weight: bold;
+}
+
+
+.popup-overlay .downbtn:hover{
+
+  background: #7e807f;
+  color: rgb(0, 0, 0);
+
+  box-shadow: 0px 2px 2px 4px rgba(3, 240, 240, 0.4);
+}
+
+/* .popup-overlay .table tr:nth-child(odd) td {
+  background: #6feee888;
+}
+
+.popup-overlay .table tr:nth-child(even) td {
+  background: #bdbbbb2d; 
+} */
+
+
+/* ---------------------------------------------------------------------------------------- */
+.chart-box {
+  background: rgb(255, 255, 255);
+  padding: 40px;
+  border: solid 3px black;
+  border-radius: 12px;
+  text-align: center;
+  width: 70rem;
+  box-shadow: 0px 2px 2px 4px rgb(63, 233, 245);
+  backdrop-filter: blur(5px);
+
+  max-height: 100vh;     
+  overflow-y: auto; 
+}
+
+
+
+/* ---------------------------------------------------------------------------------------- */
+  
+.popup-overlay span
+{
+  color:black;
+  font-size:2rem;
+}
+/* .page {
+  display: grid;
+  grid-template-columns: 0.1fr 1.9fr; 
+ 
+  
+} */
+
+.chatbot-box .section.left {
+  border-right: 4px solid #000000;
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+.update-box {
+  background: rgb(255, 255, 255);
+  padding: 40px;
+  border: solid 3px black;
+  border-radius: 12px;
+  text-align: center;
+  width: 60rem;
+  box-shadow: 0px 2px 2px 4px rgb(63, 233, 245);
+  backdrop-filter: blur(5px);
+
+  max-height: 100vh;     
+  overflow-y: auto;     
+}
+
+.update-box .form-groups
+{
+  padding-top: .5rem;
+
+}
+
+.update-box .form-groups label
+{
+  font-size: 18px;
+  font-weight: bold;
+  
+  text-align:left;
+  width: 8rem;
+
+}
+
+.update-box .form-groups input, select
+{
+  font-size: 19px;
+  font-weight: bold;
+  width: 25rem;
+  border: solid 3px black;
+  border-radius:.5rem;
+  text-align: center;
+  box-shadow: 0px 2px 2px 4px rgb(63, 233, 245);
+
+}
+
+.update-box .form-row-staff 
+{
+ justify-content: center;
+ justify-items: center;
+ align-items: center;
+
+}
+
+.update-box .form-row-staff input
+{
+  font-size: 19px;
+  font-weight: bold;
+  width: 25rem;
+  border: solid 3px black;
+  border-radius:.5rem;
+  text-align: center;
+  box-shadow: 0px 2px 2px 4px rgb(63, 233, 245);
+  margin-bottom: 2rem;
+
+}
+
+.update-box .form-row-staff label
+{
+  
+  font-size: 18px;
+  font-weight: bold;
+  color: #070129;
+  width: 8rem;
+  margin-left: 8rem;
+
+}
+
+
+
+
+
