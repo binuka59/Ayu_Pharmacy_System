@@ -170,6 +170,31 @@
 
 }
 
+.bot-ai-in
+{
+  width:15rem;
+  height:19rem;
+  animation: smartAnim 6s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes smartAnim {
+
+  0%   { transform: scaleX(1) scale(0.9); }
+  10%  { transform: scaleX(1) scale(0.9); }
+  20%  { transform: scaleX(1) scale(1); }
+  30% { transform: scaleX(-1) scale(1.1); }
+
+
+  40%  { transform: scaleX(-1) scale(1); }
+  50%  { transform: scaleX(-1) scale(0.9); }
+  60%  { transform: scaleX(1) scale(1.1); }
+
+  70%  { transform: scaleX(1) scale(1); }
+  80%  { transform: scaleX(1) scale(0.9); }
+
+  100% { transform: scaleX(1) scale(0.9); }
+}
 
 
 .popup-error {
@@ -276,5 +301,144 @@
 @keyframes spin {
   100% {
     transform: rotate(360deg);
+  }
+}
+
+
+
+/* --------------------- chat box responsive --------------------- */
+@media screen and (max-width: 768px) {
+
+  /* --------------------- chatbot box --------------------- */
+  .chatbot-box {
+    width: 95%;
+    padding: 12px;
+    grid-template-columns: 1fr;
+    border-width: 2px;
+    border-radius: 10px;
+    max-height: 90vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: auto;
+  }
+
+  .chatbot-box h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  /* --------------------- left section --------------------- */
+  .chatbot-box .left {
+    border-bottom: 2px solid #000;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .chatbot-box .left span {
+    display: none;
+  }
+
+  .bot-ai-in
+  {
+    width:5rem;
+    height:6rem;
+  }
+
+ 
+  /* --------------------- section --------------------- */
+  .chatbot-box .section {
+    padding: 5px;
+  }
+
+  /* --------------------- right section --------------------- */
+  .chatbot-box .section-right {
+    height: auto;
+    width: 100%;
+  }
+
+  /* --------------------- chat area --------------------- */
+  .chatbot-box .chat-bot {
+    width: 100%;
+    height: 20rem;
+    max-height: 20rem;
+    overflow-y: auto;
+    padding-right: 5px;
+  }
+
+  /* --------------------- user message --------------------- */
+  .chatbot-box .message {
+    max-width: 85%;
+    font-size: 0.9rem;
+    padding: 8px 10px;
+    border-radius: 12px;
+    margin: 5px 0;
+    word-break: break-word;
+  }
+
+  /* --------------------- bot reply --------------------- */
+  .chatbot-box .reply {
+    max-width: 90%;
+    font-size: 0.9rem;
+    padding: 8px 10px;
+    border-radius: 12px;
+    margin: 5px 0;
+    word-break: break-word;
+  }
+
+  /* --------------------- search bar --------------------- */
+  .searchdata {
+    width: 100%;
+    padding: 0.5rem;
+    border-width: 2px;
+    border-radius: 15px;
+    gap: 5px;
+    margin-top: 0.5rem;
+  }
+
+  .input-wrapper {
+    width: 100%;
+    gap: 5px;
+  }
+
+  .input-box {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  /* --------------------- image preview --------------------- */
+  .preview-box img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .preview-box .remove {
+    font-size: 10px;
+    top: -5px;
+    right: -5px;
+  }
+
+  /* --------------------- icons --------------------- */
+  .icon,
+  .plus,
+  .send,
+  .spin {
+    font-size: 18px !important;
+  }
+
+  .chatbot-box .section-right .faplus,
+  .chatbot-box .section-right .send {
+    font-size: 20px;
+    margin: 0 5px;
+  }
+
+  .chatbot-box .section-right .faplus:hover,
+  .chatbot-box .section-right .send:hover {
+    font-size: 20px;
+  }
+
+  /* --------------------- popup error --------------------- */
+  .popup-error {
+    padding: 10px;
+    text-align: center;
   }
 }

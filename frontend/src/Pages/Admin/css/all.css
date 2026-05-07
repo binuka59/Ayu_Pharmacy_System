@@ -60,3 +60,177 @@
   margin-bottom: 2rem;
 }
 }
+@media screen and (max-width: 768px) {
+
+  /* ================= MAIN CONTENT ================= */
+
+  .main-content {
+    margin-left: 0 !important;
+    padding: 1rem;
+    padding-top: 5rem;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .main-content.shifted {
+    margin-left: 0 !important;
+  }
+
+  .main-content h1 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  /* ================= PROFILE SECTION ================= */
+
+  .form-customer .profile {
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+
+  .profile-up {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+  .profile-up .img-circle {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+  }
+
+  /* ================= PROFILE DETAILS ================= */
+
+  .profile-up .form-data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0;
+    gap: .5rem;
+  }
+
+  .profile-up span1 {
+    width: 100%;
+    font-size: 1rem;
+    margin-top: .5rem;
+  }
+
+  .profile-up input {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    font-size: 1rem;
+    padding: .5rem;
+  }
+
+  /* ================= PASSWORD INPUT ================= */
+
+  .profile-up .form-password {
+    width: 100%;
+    font-size: .95rem;
+  }
+
+  /* ================= BUTTONS ================= */
+
+  .profile-up .prook,
+  .popup-box .prook,
+  .popup-box .proclose,
+  .popup-overlay .downbtn {
+    width: 100%;
+    margin-top: .8rem;
+    font-size: .95rem;
+  }
+
+  /* ================= POPUP ================= */
+
+  .popup-overlay {
+    padding: 1rem;
+    align-items: flex-start;
+    overflow-y: auto;
+  }
+
+  .popup-box,
+  .chart-box,
+  .update-box {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+  }
+
+  .popup-overlay span {
+    font-size: 1.2rem;
+  }
+
+  .popup-overlay .clos-btn {
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+  }
+
+  /* ================= FORM CONTROLS ================= */
+
+  .popup-box label,
+  .update-box .form-groups label,
+  .update-box .form-row-staff label {
+    width: 100%;
+    margin-left: 0;
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+  }
+
+  .popup-box .form-control,
+  .update-box .form-groups input,
+  .update-box .form-groups select,
+  .update-box .form-row-staff input {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    font-size: .95rem;
+    padding: .6rem;
+  }
+
+  /* ================= UPDATE BOX ================= */
+
+  .update-box .form-row-staff {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .update-box .form-row-staff label {
+    margin-left: 0;
+  }
+
+  /* ================= CHATBOT SECTION ================= */
+
+  .chatbot-box .section.left {
+    border-right: none;
+    border-bottom: 3px solid black;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  /* ================= SETTINGS MENU ================= */
+
+  .settings-menu li {
+    font-size: .95rem;
+    padding: .8rem;
+  }
+
+  /* ================= TABLE SCROLL ================= */
+
+  .table-responsive {
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  table {
+    min-width: 600px;
+  }
+}

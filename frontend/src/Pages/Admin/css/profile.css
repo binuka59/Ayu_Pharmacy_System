@@ -355,7 +355,191 @@
   margin-left: 8rem;
 
 }
+@media screen and (max-width: 768px) {
 
+  /* ================= PROFILE ================= */
+
+  .form-customer .profile {
+    width: 95%;
+    border-width: 3px;
+    border-radius: 2rem;
+    margin: auto;
+    padding: 10px;
+  }
+
+  .profile-up {
+    width: 95%;
+    padding: 15px;
+    border-width: 2px;
+    border-radius: 10px;
+  }
+
+  .profile-up .img-circle {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+  }
+
+  .profile-up .form-password {
+    width: 100%;
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  .profile-up .prook {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+    transform: none;
+  }
+
+  .profile-up .form-data {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .profile-up span1 {
+    width: 100%;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .profile-up input {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+
+  /* ================= SETTINGS ================= */
+
+  .settings-menu li {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  /* ================= POPUP ================= */
+
+  .popup-overlay {
+    padding: 10px;
+  }
+
+  .popup-box {
+    width: 95%;
+    padding: 15px;
+    border-width: 2px;
+  }
+
+  .popup-box h2 {
+    font-size: 1.3rem;
+  }
+
+  .popup-box h4 {
+    font-size: 1rem;
+  }
+
+  .popup-box label {
+    width: 100%;
+    margin-left: 0;
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+
+  .popup-box .form-control {
+    width: 100%;
+    margin-left: 0;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .popup-box .prook,
+  .popup-box .proclose,
+  .popup-overlay .downbtn {
+    width: 100%;
+    font-size: 1rem;
+    margin: 8px 0;
+  }
+
+  .popup-overlay .clos-btn {
+    font-size: 18px;
+    top: 10px;
+    right: 10px;
+  }
+
+  .popup-overlay span {
+    font-size: 1.2rem;
+  }
+
+  /* ================= CHART ================= */
+
+  .chart-box {
+    width: 95%;
+    padding: 15px;
+    border-width: 2px;
+  }
+
+  /* ================= CHATBOT ================= */
+
+  .chatbot-box .section.left {
+    border-right: none;
+    border-bottom: 3px solid #000;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  /* ================= UPDATE BOX ================= */
+
+  .update-box {
+    width: 95%;
+    padding: 15px;
+    border-width: 2px;
+  }
+
+  .update-box .form-groups {
+    padding-top: 0.5rem;
+  }
+
+  .update-box .form-groups label {
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    text-align: left;
+  }
+
+  .update-box .form-groups input,
+  .update-box .form-groups select {
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .update-box .form-row-staff {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .update-box .form-row-staff label {
+    width: 100%;
+    margin-left: 0;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .update-box .form-row-staff input {
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+}
 
 
 

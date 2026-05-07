@@ -136,16 +136,7 @@ function Bill() {
             <div className="rows">
               <table className="table">
 
-                <caption
-                  style={{
-                    captionSide: "top",
-                    fontWeight: "bold",
-                    fontSize: "1.5rem",
-                    textAlign: "center",
-                  }}
-                >
-                  Bill Information
-                </caption>
+                <caption> Bill Information </caption>
 
                 <thead>
                   <tr>

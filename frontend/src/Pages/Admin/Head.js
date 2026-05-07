@@ -1,5 +1,4 @@
 import React, { useState , useEffect , useRef} from "react";
-import { Link } from 'react-router-dom';
 import './css/head.css';
 import './css/chatbot.css';
 import { FaBell,FaCog, FaUser, FaSignOutAlt,FaTimes,FaPlus  } from "react-icons/fa";
@@ -222,6 +221,7 @@ const SendMessage = async () => {
   if (selectedImage) {
     formData.append("image", selectedImage);
   }
+   formData.append("userId", userId);
 
   // ----------------------user message (text + image preview)---------------------
   
@@ -370,7 +370,7 @@ const MedicineCard = ({ data }) => {
                     )}
                     <div className="section left">
                       <h2>Ayu  Assistent</h2>
-                      <img src="/images/ai.png" style={{width:"15rem", height:"19rem"}}  alt="alertimage" className="bot-ai"/>
+                      <img src="/images/ai.png" className="bot-ai-in"  alt="alertimage" />
                       <span> V 1.0 </span>
                     </div> 
                     <div className="section-right">
@@ -541,11 +541,7 @@ const MedicineCard = ({ data }) => {
                     <li onClick={toggleFullScreen}><i className="icon-profile"><FaUser/></i>  Full Screen</li>                   
                     <li class="p-0"><div class="dropdown-divider m-0"></div></li>
                     
-                  <li>
-                      <Link to="/" onClick={logout}>
-                       <i className="icon-profile"><FaSignOutAlt /></i> Logout
-                      </Link>
-                    </li>
+                    <li onClick={logout}><i className="icon-profile"><FaSignOutAlt /></i> Logout</li>
 
                   </ul>
                 </li>

@@ -186,7 +186,7 @@ router.post("/chats", upload.single("image"), async (req, res) => {
 
       let score = 0;
 
-      for (let w of words) {
+      for (let w of normalizedMessage) {
         if (name.includes(w)) score++;
       }
 

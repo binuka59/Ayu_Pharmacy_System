@@ -53,6 +53,13 @@
   font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
+.card-block caption{
+  caption-side: top;
+  font-Weight: bold;
+  font-size:1.5rem;
+  text-align:center;
+}
+
 .sale-Search-bar
 {
   /* background-color: rgb(247, 244, 241); */
@@ -250,4 +257,118 @@ font-size: 1.2rem;
   box-shadow: 0 8px 25px rgba(67, 68, 68, 0.966);
 }
 
+/* ================= MOBILE RESPONSIVE ================= */
+@media screen and (max-width: 768px) {
 
+  /* -------- ITEM BOX GRID -------- */
+  .itembox {
+    grid-template-columns: 1fr;   /* 3 columns → 1 column */
+    gap: 15px;
+    padding: 5px;
+  }
+
+  .disbox {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  .disbox span {
+    font-size: 1rem;
+  }
+
+  .disbox span1 {
+    font-size: 1.3rem;
+  }
+
+  .card-block .rows {
+        
+    margin-left: 0;
+    overflow-x: auto;    
+
+  }
+
+  .card-block .rows th 
+  {
+    font-size: .7rem;
+  }
+
+  .card-block .rows td
+  {
+    font-size: .7rem;
+  }
+
+  /* -------- SEARCH BAR -------- */
+  .sale-Search-bar {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .sale-Search-bar label {
+    font-size: 1rem;
+    padding-left: 0;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .sale-Search-bar input {
+    margin: 0;
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  /* -------- CHART SECTION -------- */
+  .chartShow {
+    flex-direction: column;
+    width: 95%;
+    margin: 10px auto;
+    padding: 1rem;
+  }
+
+  .chartShow .disboxs {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .chartShow .background-pic {
+    width: 100%;
+    height: auto;
+  }
+
+  .chartShow .headname {
+    writing-mode: horizontal-tb; /* vertical text → normal */
+    height: auto;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+
+  .chartShow .staff-box {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .staff-sale {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .chartShow .staff-box .staff-sale span {
+    margin-left: 0;
+    font-size: 1.2rem;
+  }
+
+  .chartShow .staff-sale .logo {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  /* -------- DOWNLOAD BUTTON -------- */
+  .card-block .downloadbtn {
+    margin: 1rem auto;
+    width: 90%;
+    font-size: 1rem;
+    display: block;
+  }
+}
