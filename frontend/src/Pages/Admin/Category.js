@@ -141,7 +141,7 @@ useEffect(() => {
             {successMessage && <p style={{ color: "green"}}>{successMessage}</p>}
             {error && <p style={{ color: "red" }}>{error}</p>}
           </div>
-          <form className="form-group" onSubmit={handleCategory}>
+          <form className="form-groups" onSubmit={handleCategory}>
             <div className="form-category">
               <label>Add New Category:</label>
               <input 

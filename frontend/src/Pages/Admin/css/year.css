@@ -83,3 +83,80 @@
 }
 
 
+@media screen and (max-width: 768px) {
+
+  /* ================= DISBOX ================= */
+
+  .disbox {
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .disbox:hover {
+    transform: translateY(-4px) scale(1.01);
+  }
+
+  /* ================= BOX IMAGE ================= */
+
+  .box-imag {
+    width: 6rem;
+    height: 6rem;
+    object-fit: contain;
+  }
+
+  /* ================= CUSTOMER SELECT ================= */
+
+  .custselect {
+    width: 90%;
+    margin-left: 0;
+    font-size: 0.95rem;
+    padding: 6px;
+    border-width: 2px;
+  }
+
+  /* ================= YEAR SALE PAGE ================= */
+
+  .Year-sale .page {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  /* ================= TOP ITEM ================= */
+
+  .Year-sale .topitem {
+    width: 100%;
+    grid-template-columns: 1fr;
+    margin-top: 1rem;
+    padding: 1rem;
+    text-align: center;
+    border-width: 2px;
+  }
+
+  /* ================= IMAGE ================= */
+
+  .Year-sale .img-fluid {
+    width: 8rem;
+    height: 8rem;
+    margin: auto;
+    object-fit: contain;
+  }
+
+  /* ================= HEADING ================= */
+
+  .Year-sale .head {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  /* ================= PARAGRAPH ================= */
+
+  .Year-sale p {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0 0.5rem;
+  }
+
+}

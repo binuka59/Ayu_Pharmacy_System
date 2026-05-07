@@ -438,7 +438,7 @@ useEffect(() => {
 
             <div className="section right">
               <div class="card-block">
-                <div class="rows">
+                <div class="row">
                   <table class="table">
                     <thead>
                       <tr>

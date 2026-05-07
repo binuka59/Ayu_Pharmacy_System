@@ -17,6 +17,7 @@
 }
 .main-content.shifted {
   margin-left: 20%;
+ 
 
   
 }
@@ -111,14 +112,14 @@
    width:24%;
 }
 
-.right .rows
+.right .row
 {
   margin-top: 3rem; 
   border: 3px solid rgba(0, 0, 0, 0.966);
   border-radius: .5rem;
    box-shadow: 2px 2px 2px 4px rgba(0, 245, 212, 0.6);
    width:100%;
-  margin-left: 10%;
+ 
   
 }
 
@@ -406,141 +407,190 @@
 }
 
 
-
-
 @media screen and (max-width: 768px) {
 
   .main-content {
     margin-left: 0;
     padding: 1rem;
     padding-top: 5rem;
+    width: 100%;
   }
 
   .main-content.shifted {
-    margin-left: 0; /* Avoid shifting on small screens */
+    margin-left:5rem;
+   
   }
 
   .main-content h1 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   .page {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     gap: 1rem;
   }
 
   .section {
-    padding: 15px;
+    padding: 10px;
+    width: 100%;
   }
+
+  /* ================= FORM ================= */
 
   .form-group {
-    flex-direction: column; 
-    font-size: 1.2rem;
+    flex-direction: column;
+    width: 55%;
+    min-width: fit-content;
     align-items: flex-start;
-    
   }
-   .form-serach label
-  {
-    
-    margin-left:2rem;
-    text-align: left;
+
+  .form-serach {
+    width: 100%;
+  }
+
+  .form-serach label {
+    margin-left: 0;
     font-size: 1rem;
   }
 
-  .form-group .form-serach input
-  {
-    width:10rem; 
-    margin-left:2rem;
-    text-align: left;
+  .form-group .form-serach input {
+    width: 100%;
+    margin-left: 0;
     font-size: 1rem;
   }
-  .details .form input
-  {
-    width:10rem; 
-    margin-left:1rem;
-    text-align: left;
+
+  .form {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .form .form-label,
+  .right .form-label,
+  .details .form-label {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 5px;
     font-size: 1rem;
   }
-  .right .amount
-  {
-    width:10rem; 
-    margin-left:-2rem;
-    text-align: left;
+
+  .details .form input {
+    width: 100%;
+    margin-left: 0;
     font-size: 1rem;
   }
-    .right .amounts .form-label 
-  {
-    width:10rem; 
-    margin-left: -18rem;
-    text-align: left;
+
+  /* ================= STOCK ================= */
+
+  .form-stock {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .form-stock label {
+    margin-left: 0;
     font-size: 1rem;
   }
-   .form-stock label{
- 
-    margin-left:2rem;
-    text-align: left;
-    font-size: 1rem;
-  }
+
   .form-stock input {
-   border: none;
-    width:1rem; 
-    margin-left: 15rem;
-    text-align: left;
+    width: 100%;
+    margin-left: 0;
     font-size: 1rem;
   }
 
-  .form .form-label
-  {
-    width:8rem; 
-    margin-bottom: 0.5rem;
-    margin-left: 2rem;
-  }
-  .right .form-label
-  {
-    width:8rem; 
-    margin-bottom: 0.5rem;
-    margin-left: 2rem;
+  /* ================= TABLE ================= */
+
+ .right .row {
+    width: 55%;          
+    margin-left: 0;
+    overflow-x: auto;    
+    padding: 5px;
+
   }
 
-  .right .rows {
-    width: 20%;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    box-shadow: 1px 1px 2px rgba(0, 245, 212, 0.4);
-    font-size:.8rem;
-   
-  }
-
-
-  .button-group {
-    flex-direction: column; /* Stack buttons vertically */
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-
-  .button-group input[type="button"] {
-    padding: 10px 10px;
-    width: 15rem;
-    font-size: 1rem;
-    margin-left: 5rem;
-  }
-
-  .details .form-label,
-  .form-label {
-    font-size: 1rem;
-  }
-
-  .right .card-block thead {
+  .right .card-block {
+        
+    width: 100%;
     font-size: .5rem;
   }
 
+  .right .card-block table {
+    
+    border-collapse: collapse;
+  }
+
+  .right .card-block thead {
+    font-size: 0.85rem;
+  }
+
   .right .card-block tbody {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
-  .form-stock input {
-    width:10rem;
+  .right .card-block th,
+  .right .card-block td {
+    font-size: .5rem;
+    padding: 6px;
+    word-break: break-word;
   }
+
+  /* ================= TOTAL ================= */
+
+
+  .right .form-group {
+    margin-left: 0;
+    width: 55%;
+    max-width: fit-content;
+  }
+
+  .right .amount {
+    width: 100%;
+    margin-left: 0;
+    font-size: 1rem;
+  }
+
+  /* ================= BUTTONS ================= */
+
+  .button-group {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .button-group input[type="button"] {
+    width: 100%;
+    margin-left: 0;
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  /* ================= MODAL ================= */
+
+  .printbill .modal-content {
+    width: 95%;
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .printform {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .printform input[name="cash"] {
+    width: 100%;
+  }
+
+  .btnprint {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btnprint button {
+    width: 100%;
+    padding: 12px;
+  }
+
 }
-
 

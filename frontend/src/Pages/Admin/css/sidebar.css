@@ -12,6 +12,7 @@
 /* ================================= */
 .dashboard {
   display: flex;
+  
 }
 
 .sidebar {
@@ -26,12 +27,15 @@
   overflow-y: auto;   
   z-index:0;
   
+  
 }
 
 
 .sidebar.open {
   left: 0;
   width: 16%;
+  
+  
  
   
 }
@@ -39,7 +43,7 @@
 .sidebar.close {
   left: 0;
   width: 1px;
-  background: red;
+
 
   
 }
@@ -104,6 +108,7 @@
   align-items: center;
   justify-content: space-between; 
   width: 100%; 
+  
 
   
 }
@@ -125,6 +130,7 @@
   padding: 20px;
   flex: 1;
   transition: margin-left 0.3s ease;
+  
 }
 
 /* Responsive */
@@ -169,5 +175,108 @@
   font-size: 1rem;
   transition: left 0.3s ease; 
 }
+
+}
+
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media screen and (max-width: 768px) {
+
+  /* ---------------- DASHBOARD ---------------- */
+
+  .dashboard {
+    flex-direction: column;
+  }
+
+  /* ---------------- SIDEBAR ---------------- */
+
+  .sidebar {
+    top: 100px;
+    left: -32%;
+    right: auto;
+    width: 40%;
+    height: calc(100vh - 100px);
+    z-index: 999;
+    transition: left 0.3s ease;
+    overflow-y: auto;
+    
+  }
+
+  /* Sidebar Open */
+
+  .sidebar.open {
+
+    left: 0;
+    width: 130px;
+    background: #9ef1f7;
+    
+  }
+
+
+  /* Sidebar Close */
+
+  .sidebar.close {
+    left: -100%;
+    width: 150px;
+    background: #1df3e869;
+  }
+
+  /* ---------------- MENU LIST ---------------- */
+
+  .sidebar ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .sidebar ul li {
+    width: 100%;
+  }
+
+  /* ---------------- MENU LINKS ---------------- */
+
+  .sidebar ul li a,
+  .sidebar ul li .menu-item {
+    font-size: 0.95rem;
+    padding: 12px 10px;
+    gap: 10px;
+    width: 100%;
+
+  }
+
+
+  .sidebar ul li .submenu {
+    padding-left: 10px;
+  }
+
+  .sidebar ul li .submenu li a {
+    font-size: 0.8rem;
+    padding: 8px 10px;
+  }
+
+  /* ---------------- ICON ---------------- */
+
+  .sidebar .showic {
+    margin-left: auto;
+    font-size: 0.9rem;
+    margin-top: 0;
+  }
+
+  /* ---------------- CONTENT ---------------- */
+
+  .content {
+    margin-left: 0;
+    width: 100%;
+    padding: 80px 10px 20px 10px;
+    
+  }
+
+  /* ---------------- TOGGLE BUTTON ---------------- */
+
+  .toggle-btn.open {
+    top: 5rem;
+    left: 1rem;
+    display: block;
+    z-index: 1000;
+  }
 
 }
